@@ -1,0 +1,79 @@
+<link href="SurveyForm.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+<div class="container">
+  <div class="main">
+  <header>
+<h1 id="title">Technology Survey Form</h1>
+<h2 id="description">Thank you for taking the time to fill out this small survey!</h2>
+  </header>
+ <form id="survey-form">
+   <label 
+          for="name-label"
+          id="name"
+          >Name
+   </label><br>
+   <input type="text" 
+          name="name" 
+          id="name-label"
+          placeholder="Enter your name"
+          required><br>
+   <label 
+          for="email-label"
+          id="email"
+          >Email
+   </label><br>
+   <input 
+          type="email" 
+          id="email-label" 
+          name="email" 
+          placeholder="Enter your email"
+          required><br>
+   <label 
+          for="number-label"
+          id="age"
+          >Age
+   </label><br>
+   <input
+          id="number-label"
+          name="age"
+          type="number"
+          max="100"
+          min="10"
+          placeholder="Enter your age"
+          required><br>
+   <label 
+          for="gender"
+          id="gender"
+          >Gender
+   </label><br>
+   <select id="gender">
+     <option value="" selected disabled hidden>Select gender</option>
+     <option value="male">Male</option>
+     <option value="female">Female</option>
+     <option value="other">Other</option>
+   </select>
+   <div id="dropdown">
+   <p class="tech">In which technologies are you interested? (Select all that apply)</p>
+   <label><input type="checkbox" name="cb">Front-End Development</label><br>        <label><input type="checkbox" value="one" name="cb">Back-End Development</label><br>
+   <label><input type="checkbox" value="two" name="cb">App Development</label><br>
+   <label><input type="checkbox" value="three" name="cb">Blockchain</label><br>
+   <label><input type="checkbox" value="four" name="cb">Artificial Intelligence</label><br>
+   <label><input type="checkbox" value="five" name="cb">Data Science</label><br>
+   <label><input type="checkbox" value="six" name="cb">Machine Learning</label><br>
+   <label><input type="checkbox" value="seven" name="cb">Data Structures and Algorithms</label><br>
+   <label><input type="checkbox" value="eight" name="cb">Cybersecurity</label><br>
+   <label><input type="checkbox" value="nine" name="cb">Digital Marketing</label><br>
+   <label><input type="checkbox" value="ten" name="cb">IoT</label><br>
+   <label><input type="checkbox" value="eleven" name="cb">DevOps</label><br>
+   </div>
+   <div>
+     <p>Have you worked somewhere?</p>
+     <label><input type="radio" name="rb">No</label><br>
+     <label><input type="radio" name="rb">Yes</label><br>
+   </div>
+   <label for="textarea">What technology are you currently working on?</label><br>
+   <textarea id="textarea" name="text" placeholder="Enter your text here" rows="5"></textarea><br>
+   <button type="submit" id="button">Submit</button>
+ </form>
+  </div>
+</div>

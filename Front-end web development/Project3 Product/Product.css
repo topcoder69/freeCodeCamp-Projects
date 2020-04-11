@@ -1,0 +1,281 @@
+body {
+  background: url(https://b.rgbimg.com/users/r/ro/rosebfischer/600/qzEYl1Y.jpg);
+    font-family: 'Fontdiner Swanky', cursive;
+}
+a {
+  color: #fff;
+}
+#nav-bar{
+  width=100%;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  color: white;
+  font-family: 'Fontdiner Swanky', cursive;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px white solid;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+.grid {
+  display: flex;
+}
+li{
+  color: white;
+}
+h2 {
+  margin-top: 150px;
+  color: orange;
+}
+p{
+  color: white;
+}
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 350px;
+  display: flex;
+  background-color: #000;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+.logo {
+  width: 60vw;
+}
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+#landing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+#landing > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#landing input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#landing input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+}
+
+#landing input[type="submit"]:hover {
+  background-color: purple;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #landing {
+    margin-top: 120px;
+  }
+}
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: yellow;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#technews {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#technews > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #fff;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #555;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: purple;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.header img{
+  width: 100px;
+  height: auto;
+}
+.header h2{
+  position: relative;
+  float: right;
+  margin-left: 15px;
+  font-family: 'Fontdiner Swanky', cursive;
+}
+.header nav{
+  float: right;
+  font-family: 'Fontdiner Swanky', cursive;
+  padding: 20px;
+  display: inline-block;
+  postition: fixed;
+}

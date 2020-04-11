@@ -1,0 +1,52 @@
+#main{
+  text-align: center;
+  background: #99df99;
+}
+#title{
+  font-family: "Aladin", cursive;
+  font-size: 30px;
+}
+figure {
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+}
+figcation{
+  margin-bottom: 20px;
+}
+ul {
+  margin: auto;
+  max-width: 500px;
+}
+li {
+  font-family: "georgia", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  margin: 20px;
+}
+#image{
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 40px 60px rgba(0,0,0,0.19), 0 10px 15px rgba(0,0,0,0.23);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -37px;
+  display: block;
+  position: vertical;
+  background-color: #fff;
+  padding: 40px;
+}
+#img-div{
+  align: center;
+  width: 100%;
+  margin: 40px auto 60px auto;
+}
+#end{
+  text-align: center;
+  padding: 20px 200px 20px 200px;
+  font-size: 25px;
+}
+p{
+  font-size: 20px;
+  font-family: "georgia";
+}

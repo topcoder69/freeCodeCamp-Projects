@@ -1,0 +1,120 @@
+<link href="Documentation.css" rel="stylesheet" type="text/css">
+<nav id="navbar">
+  <header>Python Data Structures</header>
+  <ul>
+    <li><a class="nav-link" href="#introduction">Introduction</a></li>
+<li><a class="nav-link" href="#prerequisites">Prerequisites</a></li>
+<li><a class="nav-link" href="#lists">Lists</a></li>
+<li><a class="nav-link" href="#sets">Sets</a></li>
+<li><a class="nav-link" href="#tuples">Tuples</a></li>
+<li><a class="nav-link" href="#dictionary">Dictionaries</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+<p>
+The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python Web site, https://www.python.org/, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.
+      </p>
+      <p>
+The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="prerequisites">
+    <header>Prerequisites</header>
+    <article>
+      <p>
+        You should already know:
+      </p>
+      <ul>
+        <li> Basic data types like strings and numbers.</li>
+        <li> Control flow like if statements, for statements, break and continue statements.</li>
+        <li> Loops like fore and while, and else clauses on loops.</li>
+        <li> Defining functions and lambda expressions.</li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="lists">
+    <header>Lists</header>
+    <article>
+      <p>
+        Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.
+      </p>
+      <code>
+        my_list = [1,2,3,4]  
+        print(my_list)
+        squares[]
+        for x in range(10):
+            squares(x**2)
+      </code>
+      <p>The list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved (“last-in, first-out”). To add an item to the top of the stack, use append(). To retrieve an item from the top of the stack, use pop() without an explicit index.</p>
+      <p>It is also possible to use a list as a queue, where the first element added is the first element retrieved (“first-in, first-out”); however, lists are not efficient for this purpose. While appends and pops from the end of list are fast, doing inserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).</p>
+    </article>
+  </section>
+  <section class="main-section" id="sets">
+    <header>Sets</header>
+    <article>
+      <p>
+      Python also includes a data type for sets. A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
+
+Curly braces or the set() function can be used to create sets. Note: to create an empty set you have to use set(), not {}; the latter creates an empty dictionary, a data structure that we discuss in the next section.  
+      </p>
+      <code>
+        basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+        print(basket)   
+        
+        a = {x for x in 'abracadabra' if x not in 'abc'}
+      </code>
+      <p>Operations can be performed on sets, like:</p>
+      <code>
+        a = set('abracadabra')
+        b = set('alacazam')
+        a - b       
+        a | b 
+        a & b   
+        a ^ b  
+      </code>
+    </article>
+    </section>
+   <section class="main-section" id="tuples">
+    <header>Tuples</header>
+    <article>
+      <p>
+        We saw that lists and strings have many common properties, such as indexing and slicing operations. They are two examples of sequence data types (see Sequence Types — list, tuple, range). Since Python is an evolving language, other sequence data types may be added. There is also another standard sequence data type: the tuple.
+
+A tuple consists of a number of values separated by commas.
+      </p>
+      <code>
+        t = 12345, 54321, 'hello!'
+        # nested tuple
+        u = t, (1, 2, 3, 4, 5)
+      </code>
+      <p>Output tuples are always enclosed in parentheses, so that nested tuples are interpreted correctly; they may be input with or without surrounding parentheses, although often parentheses are necessary anyway (if the tuple is part of a larger expression). It is not possible to assign to the individual items of a tuple, however it is possible to create tuples which contain mutable objects, such as lists.</p>
+     </article>
+  </section>
+  <section class="main-section" id="dictionary">
+    <header>Dictionaries</header>
+    <article>
+      <p>
+        Another useful data type built into Python is the dictionary (see Mapping Types — dict). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like append() and extend().
+      </p>
+      <p>
+        It is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.
+      </p>
+      <p>
+        The main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also possible to delete a key:value pair with del. If you store using a key that is already in use, the old value associated with that key is forgotten. It is an error to extract a value using a non-existent key.
+      </p>
+      <code>
+        tel = {'jack': 4098, 'sape': 4139}
+        tel['guido'] = 4127
+        dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
+        {x: x**2 for x in (2, 4, 6)}
+      </code>
+    </article>
+  </section>
+  
+</main>
